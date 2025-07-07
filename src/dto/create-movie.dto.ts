@@ -3,7 +3,7 @@ import { IsNotEmpty, IsString, IsOptional, IsInt } from 'class-validator';
 export class CreateMovieDto {
   @IsNotEmpty()
   @IsString()
-  title: string;
+  title!: string;
 
   @IsOptional()
   @IsString()

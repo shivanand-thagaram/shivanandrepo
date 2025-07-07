@@ -3,8 +3,9 @@ import { Pool } from 'pg';
 import * as schema from './schema';
 
 
+
 const pool = new Pool({
-  connectionString: 'postgres://postgres:Nandu321!@localhost:5432/mydb',
+  connectionString: 'postgres://postgres:Nandu321!@localhost:5432/mynewdb',
 });
 
 export const db = drizzle(pool, { schema });
